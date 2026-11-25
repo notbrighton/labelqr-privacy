@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — LabelQR</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #0f172a;
+      --ink2: #334155;
+      --mute: #64748b;
+      --line: #e2e8f0;
+      --accent: #1d4ed8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --ink: #f8fafc;
+        --ink2: #cbd5e1;
+        --mute: #94a3b8;
+        --line: #1e293b;
+        --accent: #60a5fa;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 32px;
+    }
+    .nav-lang {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    .nav-lang a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .nav-lang a:hover { text-decoration: underline; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+    .updated {
+      margin: 0;
+      color: var(--mute);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+    p, li {
+      color: var(--ink2);
+      font-size: 15.5px;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 10px 0 16px;
+    }
+    li { margin-bottom: 8px; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(148, 163, 184, 0.16);
+      color: var(--ink);
+    }
+    a { color: var(--accent); }
+    .divider {
+      margin: 56px 0 40px;
+      border: 0;
+      border-top: 1px solid var(--line);
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 13.5px;
+      color: var(--mute);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <nav class="nav-lang" aria-label="Language jump">
+        <a href="#en">English</a>
+        <a href="#zh">简体中文</a>
+      </nav>
+      <h1 id="en">Privacy Policy — LabelQR</h1>
+      <p class="updated">Last updated: November 24, 2026 · Applies to LabelQR Chrome &amp; Microsoft Edge Extension (v1.1.2+)</p>
+    </header>
+
+    <section>
+      <p><strong>LabelQR — QR Code, Bulk Barcode &amp; Label PDF</strong> is designed with a strict local-first architecture. Its single purpose is to generate scannable QR codes, commercial 1D barcodes, and printable physical-size vector label PDFs locally inside your browser from the active tab, user-entered text, or local files.</p>
+
+      <h2>1. Data Collection &amp; Local Processing</h2>
+      <ul>
+        <li><strong>No personal data collected:</strong> LabelQR does not operate user accounts and does not collect your name, email address, IP address, browsing history, or any personally identifiable information.</li>
+        <li><strong>100% local generation:</strong> All QR codes, 1D barcodes, ZIP archives, and vector label PDFs are generated strictly inside your browser. LabelQR never transmits webpage URLs, page titles, selected text, SKU lists, or exported files to the developer or any third-party server.</li>
+        <li><strong>Local file parsing:</strong> Pasted text (up to 1 MB) and imported local files (TXT, CSV, TSV, and Excel <code>.xlsx</code>, up to 10 MB per file) are read, parsed, and validated entirely on your device.</li>
+        <li><strong>No ads, trackers, or remote code:</strong> LabelQR contains zero advertisements, zero analytics SDKs, and zero remotely hosted scripts.</li>
+      </ul>
+
+      <h2>2. Browser Permissions Explained</h2>
+      <ul>
+        <li><code>activeTab</code>: Temporarily accesses the active tab only when you click the LabelQR toolbar icon so it can generate a QR code for the current page.</li>
+        <li><code>tabs</code>: Reads the active tab's URL, pending URL, and title metadata (when made available by the browser) to generate the QR code, and opens the standalone batch workspace in a new extension tab when you click the fullscreen icon.</li>
+        <li><code>contextMenus</code>: Adds right-click menu options so you can turn a page, link, or selected text into a QR code on demand.</li>
+        <li><code>clipboardWrite</code>: Writes the generated QR code image or text content to your clipboard only when you explicitly click a copy button.</li>
+      </ul>
+
+      <h2>3. Local Storage &amp; Center Logo</h2>
+      <ul>
+        <li>Theme, language, and batch workspace form preferences are saved locally in extension storage (<code>localStorage</code> and <code>IndexedDB</code>) on your device only.</li>
+        <li>If you upload a custom center logo for a single QR code, it is stored locally and bound strictly to that exact page URL so it restores when reopening the popup on the same page. It is cleared automatically when the page URL changes or when you click remove, and is never uploaded.</li>
+      </ul>
+
+      <h2>4. Data Sharing &amp; Contact</h2>
+      <p>LabelQR does not sell, share, or transfer any user data to third parties. If future versions introduce optional features that change how data is handled, this policy and the in-extension notices will be updated prior to release.</p>
+      <p>Developer contact: <a href="mailto:jmaike98@gmail.com">jmaike98@gmail.com</a></p>
+    </section>
+
+    <hr class="divider">
+
+    <section lang="zh-CN">
+      <h1 id="zh">LabelQR 隐私政策</h1>
+      <p class="updated">最后更新：2026 年 11 月 24 日 · 适用于 LabelQR Chrome 与 Microsoft Edge 扩展（v1.1.2 及以上）</p>
+
+      <p><strong>LabelQR — 网页二维码、批量条形码与标签 PDF 打印</strong>坚持纯本地离线优先原则。本扩展的唯一用途是在您的浏览器本地，将当前活动标签页、用户输入文本或本地表格文件转换为可扫描的二维码、商业条形码及物理尺寸矢量标签 PDF。</p>
+
+      <h2>1. 数据收集与本地处理</h2>
+      <ul>
+        <li><strong>不收集个人信息：</strong>LabelQR 不运营用户账户，不收集您的姓名、邮箱、IP 地址、浏览历史或任何可识别个人身份的信息。</li>
+        <li><strong>100% 本地生成：</strong>所有二维码、条形码、ZIP 归档与矢量标签 PDF 均完全在您的浏览器本地生成，绝不会将网页地址、页面标题、选中文本、商品 SKU 列表或导出文件上传至开发者或任何第三方服务器。</li>
+        <li><strong>本地文件解析：</strong>批量工作区中的粘贴文本（最多 1 MB）及导入的 TXT、CSV、TSV、Excel（<code>.xlsx</code>）文件（单文件最多 10 MB）均在您的设备本地读取、解压和校验，绝不上传。</li>
+        <li><strong>无广告、无跟踪器、无远程脚本：</strong>LabelQR 不包含任何广告、统计分析 SDK 或远程加载代码。</li>
+      </ul>
+
+      <h2>2. 浏览器权限用途说明</h2>
+      <ul>
+        <li><code>activeTab</code>：仅在您主动点击扩展图标时临时访问当前活动标签页，用于生成当前网页二维码。</li>
+        <li><code>tabs</code>：读取当前活动标签页的 URL、待提交 URL 和标题元数据以生成二维码，并在您主动点击全屏图标时在新标签页打开独立批量工作区。</li>
+        <li><code>contextMenus</code>：提供右键菜单，便于您按需将当前网页、链接或选中文本生成二维码。</li>
+        <li><code>clipboardWrite</code>：仅在您主动点击“复制二维码图片”或“复制内容”按钮时写入系统剪贴板。</li>
+      </ul>
+
+      <h2>3. 本地存储与中心图标</h2>
+      <ul>
+        <li>明暗主题、语言选择及批量工作区表单偏好仅保存在您本机浏览器的扩展本地存储（<code>localStorage</code> 与 <code>IndexedDB</code>）中。</li>
+        <li>您主动上传的二维码中心图标仅保存在本地并严格绑定上传时的当前页面完整 URL，用于同一页面重开弹窗时恢复；页面 URL 变化或手动移除时自动清除，绝不上传。</li>
+      </ul>
+
+      <h2>4. 数据共享与联系方式</h2>
+      <p>LabelQR 不出售、共享或向任何第三方传输用户数据。若未来版本因新增可选功能而改变数据处理方式，我们将在发布前先行更新本隐私政策与扩展内说明。</p>
+      <p>开发者联系邮箱：<a href="mailto:jmaike98@gmail.com">jmaike98@gmail.com</a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 LabelQR · Contact: <a href="mailto:jmaike98@gmail.com">jmaike98@gmail.com</a>
+    </footer>
+  </main>
+</body>
+</html>
